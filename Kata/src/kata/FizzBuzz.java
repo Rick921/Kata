@@ -20,6 +20,10 @@ public class FizzBuzz {
         if (n%5==0) {
             resultado = "BUZZ";
         }
+        
+        if(n%5==0&&n%3==0){
+            resultado = "FIZZBUZZ"; 
+        }
         return resultado;
     }
 }
