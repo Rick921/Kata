@@ -12,6 +12,6 @@ package kata;
 public class FizzBuzz {
     
     public int getFizzBuzz(int n){
-        return 1;
+        return n;
     }
 }
