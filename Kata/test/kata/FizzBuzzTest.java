@@ -20,15 +20,40 @@ public class FizzBuzzTest {
     @Test
     public void testFizzBuzzDeUnoDevuelveUno() {
         FizzBuzz fb = new FizzBuzz();
-        int result = fb.getFizzBuzz(1);
-        assertEquals(1, result); 
+        String result = fb.getFizzBuzz(1);
+        assertEquals("1", result); 
         
     }
      @Test
     public void testFizzBuzzDeDosDevuelveDos() {
         FizzBuzz fb = new FizzBuzz();
-        int result = fb.getFizzBuzz(2);
-        assertEquals(2, result); 
+        String result = fb.getFizzBuzz(2);
+        assertEquals("2", result); 
+        
+    }
+    
+      @Test
+    public void testFizzBuzzDeTresDevuelveFIZZ() {
+        FizzBuzz fb = new FizzBuzz();
+        String result = fb.getFizzBuzz(3);
+        assertEquals("FIZZ", result); 
+        
+    }
+    
+    
+      @Test
+    public void testFizzBuzzDeMultiploTresDevuelveFIZZ() {
+        FizzBuzz fb = new FizzBuzz();
+        String result = fb.getFizzBuzz(6);
+        assertEquals("FIZZ", result); 
+        
+    }
+    
+      @Test
+    public void testFizzBuzzDeMultiploCincoDevuelveBuzz() {
+        FizzBuzz fb = new FizzBuzz();
+        String result = fb.getFizzBuzz(15);
+        assertEquals("BUZZ", result); 
         
     }
     

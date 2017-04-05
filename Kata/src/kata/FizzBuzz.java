@@ -11,7 +11,15 @@ package kata;
  */
 public class FizzBuzz {
     
-    public int getFizzBuzz(int n){
-        return n;
+    public String  getFizzBuzz(int n){
+        String resultado = String.valueOf(n); 
+        if (n%3==0) {
+            resultado = "FIZZ";
+            
+        }
+        if (n%5==0) {
+            resultado = "BUZZ";
+        }
+        return resultado;
     }
 }
